@@ -2,6 +2,7 @@ import './App.css'
 import { Container } from 'react-bootstrap'
 import Footer from './componets/footer'
 import Formulariotarea from './componets/Formulariotarea'
+
 function App() {
   
 
