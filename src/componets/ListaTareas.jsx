@@ -1,11 +1,11 @@
 import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 import ItemsDeTareas from "./ItemsDeTareas";
-const ListaTareas = () => {
+const ListaTareas = (props) => {
   return (
     <>
       <ListGroup>
-        <ItemsDeTareas></ItemsDeTareas>
+        <ItemsDeTareas arrayTareas ={props.arrayTareas}></ItemsDeTareas>
       </ListGroup>
     </>
   );
