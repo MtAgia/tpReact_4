@@ -1,6 +1,6 @@
 import React from 'react';
 import { ListGroup, Button } from 'react-bootstrap';
-import { useState } from 'react';
+//import { useState } from 'react';
 const ItemsDeTareas = (props) => {
     /*const [dibujar, setDibujar] = useState(props.arrayTareas);
     function dibujar() {
