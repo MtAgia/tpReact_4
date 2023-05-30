@@ -11,6 +11,10 @@ const Formulariotarea = () => {
     setArrayTarea([...arrayTarea, tarea]);
     e.target.reset()
   }
+  const borrarTarea = (nombreTarea) =>{
+    let copiaTareas = arrayTarea.filter((itemTarea)=>itemTarea !== nombreTarea);
+    setArrayTarea(copiaTareas)
+  }
     return (
     <>
       <Form onSubmit={handleSubmit}>
@@ -22,7 +26,7 @@ const Formulariotarea = () => {
           </Button>
         </Form.Group>
       </Form>
-      <ListaTareas arrayTareas = {arrayTarea}></ListaTareas>
+      <ListaTareas borrarTarea= {borrarTarea} arrayTareas = {arrayTarea}></ListaTareas>
     </>
   );
 };
