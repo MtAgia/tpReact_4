@@ -5,7 +5,9 @@ const ListaTareas = (props) => {
   return (
     <>
       <ListGroup>
-        <ItemsDeTareas arrayTareas ={props.arrayTareas}></ItemsDeTareas>
+        {
+          props.arrayTareas.map((tarea, i) => <ItemsDeTareas tarea ={tarea} key={i}></ItemsDeTareas>)
+        }
       </ListGroup>
     </>
   );
